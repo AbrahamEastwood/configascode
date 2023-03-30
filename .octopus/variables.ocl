@@ -8,3 +8,7 @@ variable "TestVar1" {
         environment = ["production"]
     }
 }
+
+variable "TestVar2" {
+    value "superman" {}
+}
