@@ -10,5 +10,5 @@ variable "TestVar1" {
 }
 
 variable "TestVar2" {
-    value "superman" {}
+    value "superman vs batman" {}
 }
