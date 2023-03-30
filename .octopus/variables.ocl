@@ -10,9 +10,17 @@ variable "TestVar1" {
 }
 
 variable "TestVar2" {
-  value "superman" {}
+    value "superman" {}
 }
 
 variable "VarForOnTheFeatureBranch" {
     value "goat" {}
+}
+
+variable "ennogmaareenseentest" {
+    value "qsdfqsdf" {}
+}
+
+variable "endezoveelste" {
+    value "jjjjjjjjjjjj" {}
 }
