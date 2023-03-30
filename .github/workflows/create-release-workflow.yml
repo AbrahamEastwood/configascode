@@ -2,13 +2,18 @@
 
 name: CI
 
+env:
+  OCTOPUS_API_KEY: 'API-K4IQ5WUKQSI0KYB9K61BAKFX72SJCAXN'
+  OCTOPUS_URL: 'https://discoveryday.octopus.app'
+  OCTOPUS_SPACE: 'Default'
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ["main", "develop"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main", "develop"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -24,10 +29,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      
+      # create release in octopus
+      - name: Create a release in Octopus Deploy 🐙
+        uses: OctopusDeploy/create-release-action@v3
+        with:
+          project: 'SimpleApp'
+          git_ref: 'develop'
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
