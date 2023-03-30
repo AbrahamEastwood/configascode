@@ -14,7 +14,8 @@ on:
     branches:
       - '**'
   pull_request:
-    branches: ''
+    branches-ignore: 
+      - '**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
