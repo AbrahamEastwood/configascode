@@ -16,3 +16,7 @@ variable "TestVar2" {
 variable "VarForOnTheFeatureBranch" {
     value "goat" {}
 }
+
+variable "ennogmaareenseentest" {
+    value "qsdfqsdf" {}
+}
