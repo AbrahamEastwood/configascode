@@ -10,9 +10,9 @@ variable "TestVar1" {
 }
 
 variable "TestVar2" {
-    value "superman vs batman" {}
+  value "superman" {}
 }
 
-variable "NogEenTestVar" {
-    value "testerdetesterdetest" {}
+variable "VarForOnTheFeatureBranch" {
+    value "goat" {}
 }
