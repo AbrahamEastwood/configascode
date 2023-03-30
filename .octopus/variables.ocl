@@ -24,3 +24,7 @@ variable "ennogmaareenseentest" {
 variable "endezoveelste" {
     value "jjjjjjjjjjjj" {}
 }
+
+variable "qsdmlfkj" {
+    value "sdfdsfsdfdsfdfsdfsdfsdffds" {}
+}
