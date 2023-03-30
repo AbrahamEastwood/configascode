@@ -1,0 +1,10 @@
+variable "TestVar1" {
+    value "blaat" {
+        environment = ["development"]
+    }
+
+    value "batman" {
+        description = ""
+        environment = ["production"]
+    }
+}
