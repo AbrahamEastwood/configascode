@@ -12,3 +12,7 @@ variable "TestVar1" {
 variable "TestVar2" {
     value "superman" {}
 }
+
+variable "VarForOnTheFeatureBranch" {
+    value "goat" {}
+}
