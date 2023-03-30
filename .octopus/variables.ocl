@@ -1,0 +1,26 @@
+variable "TestVar1" {
+    value "blaat" {
+        environment = ["development"]
+    }
+
+    value "batman" {
+        description = ""
+        environment = ["production"]
+    }
+}
+
+variable "TestVar2" {
+    value "superman" {}
+}
+
+variable "VarForOnTheFeatureBranch" {
+    value "goat" {}
+}
+
+variable "ennogmaareenseentest" {
+    value "qsdfqsdf" {}
+}
+
+variable "endezoveelste" {
+    value "jjjjjjjjjjjj" {}
+}
