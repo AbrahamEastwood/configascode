@@ -24,3 +24,9 @@ variable "ennogmaareenseentest" {
 variable "endezoveelste" {
     value "jjjjjjjjjjjj" {}
 }
+
+variable "TEST123" {
+    value "mlkjmlkj" {
+        environment = ["development"]
+    }
+}
