@@ -1,11 +1,11 @@
 variable "TestVar1" {
-    value "blaat" {
-        environment = ["development"]
-    }
-
     value "batman" {
         description = ""
         environment = ["production"]
+    }
+
+    value "blaat2" {
+        environment = ["development"]
     }
 }
 
